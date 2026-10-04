@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Çarem Atelier Ana Sayfa</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F8F4EC}
+@keyframes sayfaGiris{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+[data-sayfa]{animation:sayfaGiris .45s ease-out both}
+@media (prefers-reduced-motion: reduce){[data-sayfa]{animation:none}}
+a{color:#1C1A19;text-decoration:none}a:hover{color:#7D5F33}
+</style>
+</helmet>
+<div data-sayfa="" style="font-family: 'Manrope', sans-serif; color: #1C1A19; background: #F8F4EC; min-width: 0">
+
+<sc-if value="{{showBar}}" hint-placeholder-val="{{ true }}">
+<div style="background: {{accent}}; color: #FFFFFF; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; text-align: center; padding: 11px 16px; font-weight: 500">Yeni sezon koleksiyonu yayında ✦ WhatsApp ile kolay sipariş</div>
+</sc-if>
+
+<header style="border-bottom: 1px solid #E4DED7; background: #F8F4EC">
+<div style="max-width: 1280px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: flex-start; line-height: 1">
+<img src="./assets/01ab848a87b229cc851ff64a07c8a2c7.png" alt="Çarem Atelier" style="height: 65px; width: auto; display: block">
+</a>
+<div style="display: flex; align-items: center; gap: 4px">
+<a href="Kategori.dc.html" aria-label="Ara" style="width: 44px; height: 44px; color: #1C1A19; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg></a>
+<a href="Hesap.dc.html" aria-label="Hesabım" style="width: 44px; height: 44px; color: #1C1A19; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg></a>
+<a href="Kategori.dc.html" aria-label="Favoriler" style="width: 44px; height: 44px; color: #1C1A19; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></a>
+<a href="Sepet.dc.html" aria-label="Sepet" style="width: 44px; height: 44px; color: #1C1A19; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2L5 8z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg></a>
+</div>
+</div>
+<nav aria-label="Ana menü" style="max-width: 1280px; margin: 0 auto; padding: 0 24px 16px; display: flex; flex-wrap: wrap; gap: 8px 32px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">
+<a href="YeniGelenler.dc.html" style="padding: 6px 0; color: {{accent}}">Yeni Gelenler</a>
+<a href="Kolye.dc.html" style="padding: 6px 0">Kolye</a>
+<a href="Kupe.dc.html" style="padding: 6px 0">Küpe</a>
+<a href="Bileklik.dc.html" style="padding: 6px 0">Bileklik</a>
+<a href="Yuzuk.dc.html" style="padding: 6px 0">Yüzük</a>
+<a href="Set.dc.html" style="padding: 6px 0">Set</a>
+<a href="Aksesuar.dc.html" style="padding: 6px 0">Aksesuar</a>
+</nav>
+</header>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 48px 24px 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 48px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 24px; max-width: 520px">
+<span style="font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: {{accent}}; font-weight: 600">Yeni Koleksiyon</span>
+<h1 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(44px, 6vw, 76px); line-height: 1.04; letter-spacing: -0.01em">Işıltı her gün <em style="font-style: italic">takılır.</em></h1>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #5E5853">Kolye, küpe, bileklik ve yüzüklerde özenle seçilmiş tasarımlarla kombinlerinizi tamamlayın.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px">
+<a href="#yeni" style="background: #1C1A19; color: #FFFFFF; padding: 16px 32px; font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase">Koleksiyonu Keşfet</a>
+<a href="#iletisim" style="border: 1px solid #1C1A19; padding: 15px 28px; font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; display: flex; align-items: center; gap: 10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path></svg>WhatsApp ile Sipariş</a>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div style="grid-row: span 2; background: #E7DDCC; min-height: 560px; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-size: 13px; color: #5E5853">[Kampanya fotoğrafı · dikey]</div>
+<div style="background: #DDD1BC; min-height: 272px; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-size: 13px; color: #4F4944">[Ürün detay fotoğrafı]</div>
+<div style="background: {{accent}}; min-height: 272px; display: flex; flex-direction: column; justify-content: space-between; padding: 24px; box-sizing: border-box; color: #FFFFFF">
+<span style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase">Bu Sezon</span>
+<span style="font-family: 'Bodoni Moda', serif; font-size: 30px; line-height: 1.15">Altın Tonlu Seçki</span>
+</div>
+</div>
+</section>
+
+<section id="kategoriler" style="max-width: 1280px; margin: 0 auto; padding: 0 24px 88px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 32px">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 40px">Kategoriler</h2>
+<a href="Kategori.dc.html" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 2px">Tüm Ürünler</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px">
+<sc-for list="{{categories}}" as="c" hint-placeholder-count="6">
+<a href="{{c.href}}" style="display: flex; flex-direction: column; gap: 12px">
+<div style="background: #E7DDCC; aspect-ratio: 3 / 4; display: flex; align-items: flex-end; padding: 14px; box-sizing: border-box; font-size: 12px; color: #5E5853">[Fotoğraf]</div>
+<span style="font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase">{{c.name}}</span>
+</a>
+</sc-for>
+</div>
+</section>
+
+<section id="yeni" style="background: #EFE7D8; padding: 88px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 24px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 40px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: {{accent}}; font-weight: 600">Bu Hafta</span>
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 40px">Yeni Gelenler</h2>
+</div>
+<a href="YeniGelenler.dc.html" style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 2px">Tümünü Gör</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 40px 24px">
+<sc-for list="{{products}}" as="p" hint-placeholder-count="8">
+<article style="display: flex; flex-direction: column; gap: 14px">
+<div style="position: relative; background: #E7DDCC; aspect-ratio: 3 / 4; display: flex; align-items: flex-end; padding: 16px; box-sizing: border-box; font-size: 12px; color: #5E5853">
+<span style="position: absolute; top: 14px; left: 14px; background: #F8F4EC; padding: 5px 10px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #1C1A19">Yeni</span>
+<button aria-label="{{p.favLabel}}" aria-pressed="{{p.fav}}" onClick="{{p.toggleFav}}" style="position: absolute; top: 6px; right: 6px; width: 44px; height: 44px; border: 0; background: transparent; color: {{p.heartColor}}; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="{{p.heartFill}}" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></button>
+[Ürün fotoğrafı]
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #5E5853">{{p.cat}}</span>
+<a href="Urun.dc.html" style="font-size: 16px; font-weight: 500; line-height: 1.35">{{p.name}}</a>
+<span style="font-size: 16px; font-weight: 700">[FİYAT] TL</span>
+</div>
+<a href="Sepet.dc.html" style="height: 46px; display: flex; align-items: center; justify-content: center; border: 1px solid #1C1A19; color: #1C1A19; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase">Sepete Ekle</a>
+</article>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 64px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; border-bottom: 1px solid #E4DED7">
+<div style="display: flex; gap: 16px; align-items: flex-start">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" style="flex: none; color: {{accent}}"><path d="M3 7h11v9H3z"></path><path d="M14 10h4l3 3v3h-7z"></path><circle cx="7" cy="17.5" r="1.5"></circle><circle cx="17" cy="17.5" r="1.5"></circle></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 15px">Hızlı Kargo</strong><span style="font-size: 14px; color: #5E5853; line-height: 1.5">[KARGO SÜRESİ] içinde kargoda</span></div>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" style="flex: none; color: {{accent}}"><path d="M4 12a8 8 0 1 0 2.3-5.6"></path><path d="M4 4v4h4"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 15px">Kolay İade</strong><span style="font-size: 14px; color: #5E5853; line-height: 1.5">[İADE SÜRESİ] gün içinde iade ve değişim</span></div>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" style="flex: none; color: {{accent}}"><rect x="5" y="10" width="14" height="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 15px">Güvenli Ödeme</strong><span style="font-size: 14px; color: #5E5853; line-height: 1.5">Kredi kartı ve havale ile ödeme</span></div>
+</div>
+<div style="display: flex; gap: 16px; align-items: flex-start">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" style="flex: none; color: {{accent}}"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 15px">WhatsApp Destek</strong><span style="font-size: 14px; color: #5E5853; line-height: 1.5">Ölçü ve ürün sorularınız için yazın</span></div>
+</div>
+</section>
+
+<section style="max-width: 1280px; margin: 0 auto; padding: 96px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 56px; align-items: center">
+<div style="background: #E7DDCC; aspect-ratio: 4 / 3; display: flex; align-items: flex-end; padding: 20px; box-sizing: border-box; font-size: 13px; color: #5E5853">[Mağaza veya marka fotoğrafı]</div>
+<div style="display: flex; flex-direction: column; gap: 20px; max-width: 520px">
+<span style="font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: {{accent}}; font-weight: 600">Hakkımızda</span>
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 40px; line-height: 1.15">Çarem Atelier</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #5E5853">Günlük şıklığınızı tamamlayan takıları özenle seçiyoruz. Her parçayı tasarımı, malzemesi ve işçiliğiyle tek tek değerlendiriyor; her gün severek takacağınız bir koleksiyon sunuyoruz.</p>
+</div>
+</section>
+
+<section style="background: #1C1A19; color: #F8F4EC; padding: 80px 24px">
+<div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center">
+<h2 style="margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 38px">Yeni koleksiyonlardan ilk siz haberdar olun</h2>
+<p style="margin: 0; font-size: 16px; color: #CFC8C1; line-height: 1.6">Bültenimize kaydolun; yeni gelenler ve size özel fırsatlar e-postanıza gelsin.</p>
+<form style="width: 100%; display: flex; flex-direction: column; gap: 14px; margin-top: 8px">
+<label for="eposta" style="text-align: left; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #CFC8C1">E-posta adresiniz</label>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<input id="eposta" type="email" placeholder="ornek@eposta.com" style="flex: 1 1 260px; min-width: 0; height: 52px; padding: 0 18px; border: 1px solid #5E5853; background: transparent; color: #F8F4EC; font-family: 'Manrope', sans-serif; font-size: 16px; box-sizing: border-box">
+<button type="button" onClick="{{subscribe}}" style="flex: 0 0 auto; height: 52px; padding: 0 32px; border: 0; background: #F8F4EC; color: #1C1A19; font-family: 'Manrope', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer">Kaydol</button>
+</div>
+<label style="display: flex; gap: 10px; align-items: flex-start; text-align: left; font-size: 13px; color: #CFC8C1; line-height: 1.5"><input type="checkbox" style="width: 18px; height: 18px; margin: 1px 0 0; flex: none">Elektronik Ticaret Kanunu kapsamında e-posta ile bilgilendirilmeyi kabul ediyorum.</label>
+<sc-if value="{{subscribed}}" hint-placeholder-val="{{ false }}"><p role="status" style="margin: 0; text-align: left; font-size: 15px; font-weight: 600; color: #F8F4EC">Teşekkürler! Bülten kaydınız alındı.</p></sc-if>
+</form>
+</div>
+</section>
+
+<footer id="iletisim" style="background: #F8F4EC; border-top: 1px solid #E4DED7">
+<div style="max-width: 1280px; margin: 0 auto; padding: 64px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<img src="./assets/01ab848a87b229cc851ff64a07c8a2c7.png" alt="Çarem Atelier" style="height: 49px; width: auto; display: block">
+<span style="font-size: 14px; color: #5E5853; line-height: 1.6">Takı ve aksesuar</span>
+<a href="#" style="display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: {{accent}}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path></svg>[WHATSAPP NUMARASI]</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px">
+<strong style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase">Alışveriş</strong>
+<a href="YeniGelenler.dc.html">Yeni Gelenler</a>
+<a href="Kolye.dc.html">Kolye</a>
+<a href="Yuzuk.dc.html">Yüzük</a>
+<a href="Aksesuar.dc.html">Aksesuar</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px">
+<strong style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase">Yardım</strong>
+<a href="SiparisTakip.dc.html">Sipariş Takip</a>
+<a href="Yasal.dc.html">Kargo Politikası</a>
+<a href="Yasal.dc.html">İptal, İade ve Değişim</a>
+<a href="Yasal.dc.html">Mesafeli Satış Sözleşmesi</a>
+<a href="Yasal.dc.html">KVKK ve Gizlilik</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px">
+<strong style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase">Bizi Takip Edin</strong>
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+<a href="#">Facebook</a>
+</div>
+</div>
+<div style="max-width: 1280px; margin: 0 auto; padding: 20px 24px 32px; border-top: 1px solid #E4DED7; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #5E5853">
+<span>© 2026 Çarem Atelier. Tüm hakları saklıdır.</span>
+<span>Kredi Kartı · Havale / EFT</span>
+</div>
+</footer>
+
+<sc-if value="{{showCookie}}" hint-placeholder-val="{{ true }}">
+<div role="region" aria-label="Çerez bildirimi" style="position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 10; max-width: 760px; margin: 0 auto; background: #FFFFFF; border: 1px solid #E4DED7; box-shadow: 0 8px 30px rgba(28, 26, 25, 0.12); padding: 20px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+<p style="margin: 0; flex: 1 1 320px; font-size: 14px; line-height: 1.6; color: #3E3935">Size daha iyi bir alışveriş deneyimi sunmak için çerezler kullanıyoruz. Ayrıntılar için <a href="Yasal.dc.html" style="text-decoration: underline">Çerez Politikası</a>'nı inceleyebilirsiniz.</p>
+<div style="display: flex; gap: 8px">
+<button onClick="{{closeCookie}}" style="height: 44px; padding: 0 18px; border: 1px solid #1C1A19; background: transparent; color: #1C1A19; font-family: 'Manrope', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer">Reddet</button>
+<button onClick="{{closeCookie}}" style="height: 44px; padding: 0 18px; border: 0; background: #1C1A19; color: #FFFFFF; font-family: 'Manrope', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer">Kabul Et</button>
+</div>
+</div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#7D5F33","options":["#7D5F33","#1F3A33","#3B2F5C","#8A5A2B"]},"showBar":{"editor":"boolean","default":true},"$preview":{"width":1440,"height":4000}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { cookie: true, favs: {}, subscribed: false };
+  }
+  renderVals() {
+    return {
+      accent: this.props.accent ?? '#7D5F33',
+      showBar: this.props.showBar ?? true,
+      showCookie: this.state.cookie,
+      closeCookie: () => this.setState({ cookie: false }),
+      subscribed: this.state.subscribed,
+      subscribe: () => this.setState({ subscribed: true }),
+      categories: [
+        { name: 'Kolye', href: 'Kolye.dc.html' }, { name: 'Küpe', href: 'Kupe.dc.html' }, { name: 'Bileklik', href: 'Bileklik.dc.html' },
+        { name: 'Yüzük', href: 'Yuzuk.dc.html' }, { name: 'Set', href: 'Set.dc.html' }, { name: 'Aksesuar', href: 'Aksesuar.dc.html' }
+      ],
+      products: [
+        { cat: 'Kolye', name: 'Damla Taşlı Kolye – Gümüş' },
+        { cat: 'Küpe', name: 'Mini Halka Küpe – Altın' },
+        { cat: 'Bileklik', name: 'Burgu Zincir Bileklik – Altın' },
+        { cat: 'Yüzük', name: 'Zirkon Tek Taş Yüzük – Gümüş' },
+        { cat: 'Küpe', name: 'İnci Sallantılı Küpe – Beyaz' },
+        { cat: 'Kolye', name: 'Harf Kolye – Altın' },
+        { cat: 'Set', name: 'Kolye ve Küpe Seti – Altın' },
+        { cat: 'Aksesuar', name: 'İnci Detaylı Saç Tokası – Beyaz' }
+      ].map((p, i) => {
+        const fav = !!(this.state.favs && this.state.favs[i]);
+        return {
+          ...p,
+          fav,
+          heartFill: fav ? 'currentColor' : 'none',
+          heartColor: fav ? '#7D5F33' : '#1C1A19',
+          favLabel: fav ? 'Favorilerden çıkar' : 'Favorilere ekle',
+          toggleFav: () => this.setState({ favs: { ...this.state.favs, [i]: !this.state.favs[i] } })
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>
